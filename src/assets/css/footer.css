@@ -1,0 +1,158 @@
+/* ==========================
+   FOOTER FLOTANTE
+========================== */
+
+.footer-imperium {
+  position: relative;
+  z-index: 10;
+
+  margin-top: -220px;
+
+  padding-bottom: 60px;
+
+  background: transparent;
+}
+
+/* ==========================
+   TARJETA GLASS
+========================== */
+
+.footer-card {
+  max-width: 1280px;
+
+  background: rgba(5, 40, 55, 0.30);
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border-radius: 20px;
+
+  padding: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.55);
+}
+
+/* ==========================
+   COLUMNAS
+========================== */
+
+.footer-col {
+  position: relative;
+}
+
+/* Separadores verticales desktop */
+
+.footer-col:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  right: 0px;
+
+  width: 1px;
+  height: 100%;
+
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #ec6608 0px,
+    #ec6608 4px,
+    transparent 4px,
+    transparent 10px
+  );
+}
+
+/* ==========================
+   CONTENIDO
+========================== */
+
+.footer-item {
+  height: 100%;
+  text-align: left;
+}
+
+.footer-item h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  margin-bottom: 8px;
+}
+
+.footer-icon {
+  color: #ec6608;
+  font-size: 0.9rem;
+}
+
+.footer-item p {
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+
+  margin-left: 22px;
+  margin-bottom: 0;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+
+  .footer-imperium {
+    margin-top: -450px;
+    padding: 0 25px 10px;
+  }
+
+  .footer-card {
+    padding: 25px;
+  }
+
+  /* eliminar separadores verticales */
+
+  .footer-col::after {
+    display: none;
+  }
+
+  /* separadores horizontales punteados */
+
+  .footer-col {
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .footer-col:not(:last-child)::before {
+  content: "";
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+  width: 80%;
+
+  transform: translateX(-50%);
+
+  border-bottom: 2px dotted #ec6608;
+}
+
+  .footer-item {
+    text-align: left;
+  }
+
+  .footer-item h3 {
+    justify-content: flex-start;
+    font-size: 1rem;
+  }
+
+  .footer-item p {
+    font-size: 1rem;
+    margin-left: 22px;
+  }
+}
