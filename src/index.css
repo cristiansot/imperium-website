@@ -69,24 +69,64 @@ body {
   color: #d5d5d5;
 }
 
-/* Footer */
+/* ==========================
+   TABLET
+========================== */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .hero-section {
+    min-height: 100vh;
+  }
+
   .hero-logo {
-    width: 240px;
-    margin-top: -300px;
+    width: 220px !important;
+    margin-bottom: 10px;
   }
 
-  .hero-content{
-    margin-top: -100px;
+  .hero-content {
+    padding: 0 40px;
   }
+
   .hero-content h1 {
-    margin-top: -90px;
-    font-size: 2rem;
-    padding: 10px;
+    font-size: 2rem !important;
+    line-height: 1.2;
   }
 
   .hero-content p {
-    font-size: 1rem;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    min-height: 100vh;
+  }
+
+  .hero-logo {
+    margin-top: -100px;
+    width: 180px !important;
+    margin-bottom: 10px;
+  }
+
+  .hero-content {
+    margin-top: -160px;;
+    padding: 0 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1.05rem;
+    line-height: 1.6;
   }
 }

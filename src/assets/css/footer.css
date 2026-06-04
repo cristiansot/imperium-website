@@ -20,17 +20,18 @@
 .footer-card {
   max-width: 1280px;
 
-  background: rgba(5, 40, 55, 0.30);
+  /* Fallback */
+  background: rgba(5, 40, 55, 0.75);
 
+  /* Glassmorphism */
+  background: rgba(5, 40, 55, 0.30);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
 
   border-radius: 20px;
-
   padding: 25px;
 
   border: 1px solid rgba(255, 255, 255, 0.08);
-
   box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.55);
 }
 
@@ -102,45 +103,75 @@
 }
 
 /* ==========================
+   TABLET
+========================== */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+   .footer-imperium {
+    margin-top: -160px !important;
+  }
+
+  .footer-card {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .footer-col:not(:last-child)::after {
+    right: -2px;
+  }
+
+  .footer-item h3 {
+    font-size: 0.95rem;
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+
+  .footer-icon {
+    font-size: 0.85rem;
+  }
+
+  .footer-item p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-left: 20px;
+  }
+}
+
+/* ==========================
    MOBILE
 ========================== */
 
 @media (max-width: 768px) {
 
   .footer-imperium {
-    margin-top: -450px;
-    padding: 0 25px 10px;
+    margin-top: -350px;
+    padding: 0 15px 5px;
   }
 
   .footer-card {
-    padding: 25px;
+    padding: 15px;
   }
-
-  /* eliminar separadores verticales */
 
   .footer-col::after {
     display: none;
   }
 
-  /* separadores horizontales punteados */
-
   .footer-col {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
   }
 
   .footer-col:not(:last-child)::before {
-  content: "";
-  position: absolute;
-
-  left: 50%;
-  bottom: 0;
-  width: 80%;
-
-  transform: translateX(-50%);
-
-  border-bottom: 2px dotted #ec6608;
-}
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 84%;
+    transform: translateX(-50%);
+    border-bottom: 1px dotted #ec6608;
+  }
 
   .footer-item {
     text-align: left;
@@ -148,11 +179,18 @@
 
   .footer-item h3 {
     justify-content: flex-start;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 2.8vw, 0.95rem);
+    margin-bottom: 6px;
   }
 
   .footer-item p {
-    font-size: 1rem;
-    margin-left: 22px;
+    font-size: clamp(0.75rem, 2.5vw, 0.9rem);
+    margin-left: 18px;
+    line-height: 1.4;
+  }
+
+  .footer-item svg,
+  .footer-item i {
+    font-size: 0.9rem;
   }
 }
