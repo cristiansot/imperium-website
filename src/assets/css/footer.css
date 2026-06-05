@@ -5,11 +5,7 @@
 .footer-imperium {
   position: relative;
   z-index: 10;
-
-  margin-top: -220px;
-
-  padding-bottom: 60px;
-
+  margin-top: -200px;
   background: transparent;
 }
 
@@ -108,33 +104,85 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-   .footer-imperium {
+  .footer-imperium {
     margin-top: -160px !important;
   }
 
   .footer-card {
-    padding: 22px;
-    border-radius: 18px;
+    padding: 10px !important;
+    border-radius: 18px !important;
+  }
+
+  .footer-card .row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+  }
+
+  .footer-col {
+    flex: 1 !important;
+    width: 33.333% !important;
+    max-width: 33.333% !important;
+    position: relative !important;
   }
 
   .footer-col:not(:last-child)::after {
-    right: -2px;
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0px !important;
+    width: 1px !important;
+    height: 100% !important;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      #ec6608 0px,
+      #ec6608 4px,
+      transparent 4px,
+      transparent 10px
+    ) !important;
+    display: block !important;
   }
 
   .footer-item h3 {
-    font-size: 0.95rem;
-    gap: 6px;
-    margin-bottom: 6px;
+    margin-top: 10px !important;
+    font-size: 0.95rem !important;
+    gap: 6px !important;
+    margin-bottom: 6px !important;
   }
 
   .footer-icon {
-    font-size: 0.85rem;
+    font-size: 0.85rem !important;
   }
 
   .footer-item p {
-    font-size: 0.85rem;
-    line-height: 1.5;
-    margin-left: 20px;
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    margin-left: 22px !important; 
+  }
+
+  /* ========== ELIMINAR CUALQUIER LÍNEA HORIZONTAL ========== */
+  .footer-col,
+  .footer-item,
+  .footer-card,
+  .row,
+  [class*="footer"] {
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Eliminar específicamente pseudo-elementos no deseados */
+  .footer-col::before,
+  .footer-col::after,
+  .footer-item::before,
+  .footer-item::after,
+  .footer-card::before,
+  .footer-card::after {
+    display: none !important;
+    content: none !important;
   }
 }
 
@@ -145,7 +193,7 @@
 @media (max-width: 768px) {
 
   .footer-imperium {
-    margin-top: -350px;
+    margin-top: -320px;
     padding: 0 15px 5px;
   }
 

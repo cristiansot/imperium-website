@@ -7,7 +7,8 @@ function Footer() {
       <div className="container footer-card">
         <div className="row g-4">
 
-          <div className="col-md-4 footer-col">
+          {/* Cambiado: col-sm-4 mantiene 3 columnas desde tablet pequeña */}
+          <div className="col-sm-4 col-md-4 col-lg-4 footer-col">
             <div className="footer-item">
               <h3>
                 <FaChevronRight className="footer-icon" />
@@ -22,7 +23,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-md-4 footer-col">
+          <div className="col-sm-4 col-md-4 col-lg-4 footer-col">
             <div className="footer-item">
               <h3>
                 <FaChevronRight className="footer-icon" />
@@ -33,7 +34,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-md-4 footer-col">
+          <div className="col-sm-4 col-md-4 col-lg-4 footer-col">
             <div className="footer-item">
               <h3>
                 <FaChevronRight className="footer-icon" />

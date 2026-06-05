@@ -2,34 +2,21 @@ import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import logo from "../assets/logo-2.svg";
 import '../assets/css/navbar.css'
 
-console.log(logo);
-
 function Navigation() {
   return (
-    <Navbar
-      expand="lg"
-      fixed="top"
-      variant="dark"
-      className="py-3 navbar-custom"
-    >
+    <Navbar expand="lg" fixed="top" variant="dark" className="py-3 navbar-custom">
       <Container>
-        <Navbar.Brand href="/">
-       <Navbar.Brand
-				href="/"
-				className="d-flex align-items-center ms-3 "
-			>
-				<img 
-					src={logo}
-					alt="Imperium"
-					style={{
-						width: "200px",
-						height: "auto"
-					}}
-				/>
-			</Navbar.Brand>
-          
+        <Navbar.Brand href="/" className="d-flex align-items-center ms-3">
+          <img 
+            src={logo}
+            alt="Imperium"
+            style={{
+              width: "200px",
+              height: "auto"
+            }}
+          />
         </Navbar.Brand>
-
+a
         <Navbar.Toggle aria-controls="main-navbar" />
 
         <Navbar.Collapse id="main-navbar">
@@ -40,10 +27,12 @@ function Navigation() {
             <Nav.Link href="#servicios">Equipo</Nav.Link>
             <Nav.Link href="#clientes">Clientes</Nav.Link>
 
-            <Button className="btn-advisory ms-lg-3 px-4">
-							Solicitar Asesoría
-						</Button>
-						
+            <Button 
+              className="btn-advisory ms-lg-3 px-4" 
+              href="mailto:contacto@imperiumasesorias.cl"
+            >
+              Solicitar Asesoría
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,0 +1,15 @@
+import '../assets/css/whatsapp.css'
+
+const Whatsapp = () => {
+  return (
+    <div className="phone-call cbh-phone cbh-green cbh-show cbh-static" id="clbh_phone_div" style={{ position: 'fixed', bottom: '0px', right: '5px', zIndex: '80' }}>
+      <a id="WhatsApp-button" href="whatsapp://send?text= Hola Consultores Imperium, necesito de sus servicios&amp;phone=+56990062997" className="phoneJs" title="Enviar mensaje!">
+        <div className="cbh-ph-circle"></div>
+        <div className="cbh-ph-circle-fill"></div>
+        <div className="cbh-ph-img-circle1"></div>
+      </a>
+    </div>
+  );
+};
+
+export default Whatsapp;
