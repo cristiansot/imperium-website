@@ -1,3 +1,29 @@
+/* Forzar la fuente en todo el documento */
+@import '@fontsource/montserrat/400.css';
+@import '@fontsource/montserrat/700.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Forzar en todos los elementos */
+* {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
 html,
 body,
 #root {
@@ -5,8 +31,40 @@ body,
   margin: 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-weight: 700; /* Bold para títulos */
+}
+
+h4, h5, h6 {
+  font-weight: 600; /* SemiBold para subtítulos */
+}
+
+p, span, li {
+  font-weight: 400; /* Regular para texto */
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-extrabold {
+  font-weight: 800;
 }
 
 /* HERO */
