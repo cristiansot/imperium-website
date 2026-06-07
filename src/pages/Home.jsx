@@ -1,5 +1,6 @@
 import logo from "../assets/logo.svg";
 import videoBg from "../assets/video-1.mp4";
+import '../assets/css/home.css'
 
 function Home() {
   return (

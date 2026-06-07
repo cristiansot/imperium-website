@@ -1,0 +1,290 @@
+/* equipo.css */
+
+.equipo-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 120px 0 80px 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+/* Degradado del BG */
+.equipo-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 22, 40, 0.85),
+    rgba(0, 0, 0, 0.35)
+  );
+  z-index: 1;
+}
+
+/* Shape decorativo - orientado a la izquierda */
+.equipo-shape {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: auto;
+  height: auto;
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.equipo-shape img {
+  width: 1000%;
+  height: auto;
+  max-width: 800px;
+  display: block;
+}
+
+/* Contenido principal */
+.equipo-section .container {
+  position: relative;
+  z-index: 3;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Título principal */
+.equipo-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+/* Línea debajo del título */
+.equipo-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 0.5px;
+  background-color: #ec6608;
+}
+
+/* Subtítulo */
+.equipo-subtitle {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  margin: 2.4rem auto 2rem auto;
+  max-width: 1200px;
+  line-height: 1.2;
+  font-style: italic;
+  position: relative;
+  z-index: 3;
+}
+
+/* Grid de equipo */
+.equipo-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  position: relative;
+  z-index: 3;
+}
+
+/* Card principal */
+.equipo-card {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.equipo-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Foto */
+.equipo-foto {
+  flex-shrink: 0;
+}
+
+.equipo-foto img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.equipo-card:hover .equipo-foto img {
+  transform: scale(1.05);
+}
+
+/* Info derecha */
+.equipo-info {
+  flex: 1;
+}
+
+/* Títulos */
+.equipo-titulos {
+  margin-bottom: 1rem;
+}
+
+.equipo-nombre {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 5px 0;
+  line-height: 1.3;
+}
+
+.equipo-cargo {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ec6608;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Wrapper de descripción con ícono */
+.equipo-descripcion-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+/* Ícono */
+.equipo-icon {
+  color: #ec6608;
+  font-size: 3rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.equipo-card:hover .equipo-icon {
+  transform: translateX(3px);
+}
+
+/* Descripción lista CON VIÑETAS */
+.equipo-descripcion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.equipo-descripcion li {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+/* Viñeta restaurada */
+.equipo-descripcion li::before {
+  content: "•";
+  color: #ec6608;
+  font-weight: bold;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+}
+
+/* Ocultar footer */
+.equipo-section ~ footer,
+body:has(.equipo-section) footer {
+  display: none;
+}
+
+/* Responsive */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .equipo-shape img {
+    max-width: 600px !important;
+  }
+
+  .equipo-foto img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .equipo-nombre {
+    font-size: 0.85rem;
+  }
+  
+  .equipo-cargo {
+    font-size: 0.75rem;
+  }
+  
+  .equipo-descripcion li {
+    font-size: 0.75rem;
+  }
+  
+  .equipo-subtitle {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+  
+  .equipo-shape img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .equipo-section {
+    padding: 100px 0 60px 0;
+  }
+  
+  .equipo-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .equipo-title {
+    font-size: 1.8rem;
+  }
+  
+  .equipo-subtitle {
+    font-size: 1.2rem;
+    margin: 2rem auto 2rem auto;
+  }
+  
+  .equipo-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .equipo-info {
+    width: 100%;
+  }
+  
+  .equipo-descripcion-wrapper {
+    text-align: left;
+    justify-content: flex-start;
+  }
+  
+  .equipo-titulos {
+    text-align: center;
+  }
+  
+  .equipo-shape {
+    opacity: 0.08;
+  }
+  
+  .equipo-shape img {
+    max-width: 150px;
+  }
+}

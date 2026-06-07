@@ -252,4 +252,19 @@
   color: white;
   font-size: 1.2rem;
   }
+
+  .clientes-section ~ footer,
+    body:has(.clientes-section) footer {
+    display: none;
+  }
+
+  .logo-oval .cliente-logo,
+  .logo-udp .cliente-logo,
+  .logo-geinco .cliente-logo,
+  .logo-salud .cliente-logo,
+  .logo-cinepolis .cliente-logo,
+  .logo-portland .cliente-logo {
+    margin-top: 0;
+  }
+
 }

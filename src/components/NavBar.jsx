@@ -1,11 +1,11 @@
 // src/components/NavBar.jsx
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
-import { Link, useLocation } from "react-router-dom";  // Importa Link y useLocation
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo-2.svg";
 import '../assets/css/navbar.css';
 
 function Navigation() {
-  const location = useLocation();  // Hook para saber en qué página estamos
+  const location = useLocation();
 
   return (
     <Navbar expand="lg" fixed="top" variant="dark" className="py-3 navbar-custom">
@@ -25,13 +25,12 @@ function Navigation() {
 
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto align-items-lg-center">
-            {/* Usa "as={Link}" para que React Bootstrap use Link de React Router */}
             <Nav.Link as={Link} to="/" active={location.pathname === "/"}>
               Inicio
             </Nav.Link>
-            <Nav.Link href="#nosotros">Quiénes Somos</Nav.Link>
-            <Nav.Link href="#servicios">Qué Hacemos</Nav.Link>
-            <Nav.Link href="#equipo">Equipo</Nav.Link>
+            <Nav.Link as={Link} to="/equipo" active={location.pathname === "/equipo"}>
+              Equipo
+            </Nav.Link>
             <Nav.Link as={Link} to="/clientes" active={location.pathname === "/clientes"}>
               Clientes
             </Nav.Link>
