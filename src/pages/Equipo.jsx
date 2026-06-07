@@ -1,7 +1,7 @@
-import franciscoimg from '../assets/img/equipo/francisco.png';
-import franciscaimg from '../assets/img/equipo/francisca.png';
-import katherineimg from '../assets/img/equipo/katherine.png';
-import cristinaimg from '../assets/img/equipo/cristina.png';
+import franciscoimg from '../assets/img/equipo/francisco.webp';
+import franciscaimg from '../assets/img/equipo/francisca.webp';
+import katherineimg from '../assets/img/equipo/katherine.webp';
+import cristinaimg from '../assets/img/equipo/cristina.webp';
 import bgImage from '../assets/img/backgrounds/equipo.webp';
 import shapeImage from '../assets/img/backgrounds/shape.svg'; 
 import { FaChevronRight } from "react-icons/fa";
