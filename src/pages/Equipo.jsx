@@ -1,13 +1,15 @@
+import { FaChevronRight } from "react-icons/fa";
+import '../assets/css/equipo.css';
+
+// Imports de imágenes
+import bgImage from '../assets/img/backgrounds/equipo.webp';
+import shapeImage from '../assets/img/backgrounds/shape.svg';
 import franciscoimg from '../assets/img/equipo/francisco.webp';
 import franciscaimg from '../assets/img/equipo/francisca.webp';
 import katherineimg from '../assets/img/equipo/katherine.webp';
 import cristinaimg from '../assets/img/equipo/cristina.webp';
-import bgImage from '../assets/img/backgrounds/equipo.webp';
-import shapeImage from '../assets/img/backgrounds/shape.svg'; 
-import { FaChevronRight } from "react-icons/fa";
-import '../assets/css/equipo.css'
 
-function Equipo() {
+const Equipo = () => {
   const equipoData = [
     {
       id: 1,
@@ -25,7 +27,7 @@ function Equipo() {
       nombre: "FRANCISCA SOLIS ZARHI",
       cargo: "ALIANZA",
       imagen: franciscaimg,
-      alt: "Francisca",
+      alt: "Francisca Solis Zarhi",
       descripcion: [
         "Arquitecta Senior.",
         "Arquitecta Pontificia Universidad Católica de Chile 2009.",
@@ -37,7 +39,7 @@ function Equipo() {
       nombre: "KATHERINE MUÑOZ ROJAS",
       cargo: "ALIANZA",
       imagen: katherineimg,
-      alt: "Katherine",
+      alt: "Katherine Muñoz Rojas",
       descripcion: [
         "Arquitecta.",
         "Arquitecta Universidad Andrés Bello 2016.",
@@ -49,13 +51,19 @@ function Equipo() {
       nombre: "CRISTINA ARÉVALO GUITIÉRREZ",
       cargo: "ALIANZA",
       imagen: cristinaimg,
-      alt: "Cristina",
+      alt: "Cristina Arévalo Guitiérrez",
       descripcion: [
         "Arquitecta.",
         "Arquitecta Universidad San Sebastián 2020.",
         "Expertiz: Gestión Municipal - Arquitecta Desarrollo - Modelado Digital"
       ]
     }
+  ];
+
+  const experienciaItems = [
+    "Historial laboral documentado como Arquitectos Revisores DOM.",
+    "Historial laboral en empresas de Gerenciamiento, Asesoría y Gestión de Proyectos de Construcción.",
+    "Revisión, coordinación e inspección de proyectos y obras de construcción."
   ];
 
   return (
@@ -70,13 +78,12 @@ function Equipo() {
     >
       {/* Shape decorativo */}
       <div className="equipo-shape">
-        <img src={shapeImage} alt="shape" />
+        <img src={shapeImage} alt="Decoración de fondo" />
       </div>
 
       <div className="container">
         <h1 className="equipo-title">NUESTRO EQUIPO</h1>
         
-        {/* Subtítulo */}
         <h2 className="equipo-subtitle">
           "Trabajamos acorde a los nuevos tiempos laborales. Generamos alianzas para lograr objetivos, con profesionales según expertiz"
         </h2>
@@ -84,7 +91,6 @@ function Equipo() {
         <div className="equipo-content">
           {equipoData.map((miembro) => (
             <div key={miembro.id} className="equipo-card">
-              {/* Foto izquierda */}
               <div className="equipo-foto">
                 <img 
                   src={miembro.imagen} 
@@ -93,17 +99,14 @@ function Equipo() {
                 />
               </div>
               
-              {/* Contenido derecho */}
               <div className="equipo-info">
-                {/* Títulos */}
                 <div className="equipo-titulos">
                   <h3 className="equipo-nombre">{miembro.nombre}</h3>
                   <h4 className="equipo-cargo">{miembro.cargo}</h4>
                 </div>
                 
-                {/* Descripción con ícono */}
                 <div className="equipo-descripcion-wrapper">
-                  <FaChevronRight className="equipo-icon" />
+                  <FaChevronRight className="equipo-icon" aria-hidden="true" />
                   <ul className="equipo-descripcion">
                     {miembro.descripcion.map((item, index) => (
                       <li key={index}>{item}</li>
@@ -114,9 +117,28 @@ function Equipo() {
             </div>
           ))}
         </div>
+
+        <div className="experiencia-container">
+          <div className="equipo-titulo">
+            <h2 className="equipo-experiencia-title">
+              EXPERIENCIA Y TRAYECTORIA
+            </h2>
+          </div>
+          
+          <div className="equipo-experiencia">
+            <div className="equipo-experiencia-grid">
+              {experienciaItems.map((item, index) => (
+                <div key={index} className="equipo-experiencia-item">
+                  <div className="equipo-dot" aria-hidden="true"></div>
+                  <p className="equipo-experiencia-textos">{item}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default Equipo;

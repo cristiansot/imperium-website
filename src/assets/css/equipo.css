@@ -203,10 +203,115 @@
   left: 0;
 }
 
-/* Ocultar footer */
-.equipo-section ~ footer,
-body:has(.equipo-section) footer {
-  display: none;
+/* EXPERIENCIA Y TRAYECTORIA */
+
+.experiencia-container {
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.equipo-titulo {
+  margin-top: 40px;
+  margin-bottom: -50px;
+}
+
+.equipo-experiencia-title {
+  font-size: 2rem !important;
+}
+
+.equipo-experiencia-textos{ 
+  font-size: 1rem !important;
+}
+
+/* EXPERIENCIA Y TRAYECTORIA */
+
+.experiencia-container {
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  flex-direction: column; /* Añadido: para que título quede arriba */
+  display: flex;
+  gap: 1.5rem;
+}
+
+.equipo-titulo {
+  margin-top: 0; 
+  margin-bottom: -30px; /* Cambiado: antes era -50px */
+}
+
+.equipo-experiencia-title {
+  color: #fff;
+  font-size: 1.6rem !important; /* Cambiado: antes era 3rem */
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px; /* Añadido: espacio debajo del título */
+}
+
+.equipo-experiencia {
+  margin-top: 0; /* Cambiado: antes era 40px */
+  padding: 20px 0; /* Ajustado */
+  border-top: 3px dotted rgba(255,255,255,0.8);
+  border-bottom: 3px dotted rgba(255,255,255,0.8);
+}
+
+.equipo-experiencia-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Añadido: separación entre items */
+}
+
+.equipo-experiencia-item {
+  position: relative;
+  text-align: center;
+  padding: 0 20px; /* Reducido: antes era 40px */
+}
+
+.equipo-experiencia-item:not(:last-child) {
+  border-right: 3px dotted rgba(255,255,255,0.8);
+}
+
+.equipo-dot {
+  width: 16px;
+  height: 16px;
+  background: #ec6608;
+  border-radius: 50%;
+  margin: 0 auto 10px auto; /* Reducido margen inferior */
+}
+
+.equipo-experiencia-textos { 
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .equipo-experiencia-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .equipo-experiencia-item:not(:last-child) {
+    border-right: none;
+    border-bottom: 3px dotted rgba(255,255,255,0.8);
+    padding-bottom: 30px;
+  }
+  
+  .equipo-experiencia-title {
+    font-size: 1.5rem;
+  }
 }
 
 /* Responsive */
