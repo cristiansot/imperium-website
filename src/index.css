@@ -37,9 +37,9 @@ h4, h5, h6 {
   font-weight: 600;
 }
 
-p, span, li {
-  font-weight: 400;
-}
+/* p, span, li {
+  font-weight: 500;
+} */
 
 /* Utilidades de texto */
 .text-medium {
