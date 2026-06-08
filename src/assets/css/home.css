@@ -100,23 +100,23 @@
    MOBILE
 ========================== */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .hero-logo {
-    width: 180px;
-    margin-top: -260px;
+    width: 160px !important;
+    margin-top: -320px;
   }
 
   .hero-bajada {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     line-height: 1.2;
-    margin-top: -70px;
+    margin-top: -120px;
   }
 
   .hero-list {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1 !important;
-    margin-top: -20px;
+    margin-top: -60px;
   }
 
   .hero-list li {
