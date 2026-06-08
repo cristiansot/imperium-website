@@ -35,20 +35,6 @@ function Home() {
               </div>
             </div>
 
-            {/* Listado */}
-            <div className="row justify-content-center">
-              <div className="col-lg-8">
-                <ul className="hero-list">
-                  <li>Permisología</li>
-                  <li>Estudios</li>
-                  <li>Asesorías Normativas</li>
-                  <li>Expert Advisor (Consejeros Expertos)</li>
-                  <li>Diagnósticos Estratégicos</li>
-                  <li>Tramitación ante Variados Organismos del Estado</li>
-                </ul>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>

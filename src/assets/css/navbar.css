@@ -1,4 +1,3 @@
-
 .navbar-custom {
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(12px);
@@ -8,17 +7,21 @@
   color: white !important;
   margin-left: 20px;
   font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ec6608 !important;
 }
 
 /* Boton Advidsory */
-
 .btn-advisory {
   background-color: #ec6608 !important;
   border-color: #ec6608 !important;
   color: white !important;
   font-weight: 600;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-advisory:hover {
@@ -28,5 +31,5 @@
 }
 
 @media (max-width: 768px) {
-
+  /* Tu código original - vacío como estaba */
 }
