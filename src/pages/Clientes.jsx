@@ -1,6 +1,7 @@
 import '../assets/css/clientes.css'
 import bgImage from '../assets/img/backgrounds/clientes.webp'; 
 import { FaChevronRight } from "react-icons/fa";
+import Footer from "../components/Footer";
 
 import achondoimg from '../assets/img/logos/achondo.svg';
 import invinsaImg from '../assets/img/logos/invinsa.svg';
@@ -37,73 +38,76 @@ const Clientes = () => {
   ];
 
   return (
-    <section 
-      className="clientes-section"
-      style={{
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
-    >
-      <div className="container">
-        <h1 className="clientes-title">PRINCIPALES CLIENTES</h1>
-        
-        <div className="clientes-content">
-          {/* ACOMPAÑAMIENTO CONTINUO - Izquierda */}
-          <div className="categoria-clientes">
-            <h3 className="categoria-title">
-              <FaChevronRight className="title-icon" />
-              <span>
-                ACOMPAÑAMIENTO<br />
-                CONTINUO
-              </span>
-            </h3>
-            
-            <div className="logos-wrapper">
-              <div className="logos-grid logos-grid-continuo">
-                {clientesContinuo.map((cliente) => (
-                  <div key={cliente.id} className={`logo-item ${cliente.clase}`}>
-                    <img 
-                      src={cliente.imagen} 
-                      alt={cliente.nombre}
-                      className="cliente-logo"
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
+    <>
+      <section 
+        className="clientes-section"
+        style={{
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="container">
+          <h1 className="clientes-title">PRINCIPALES CLIENTES</h1>
+          
+          <div className="clientes-content">
+            {/* ACOMPAÑAMIENTO CONTINUO - Izquierda */}
+            <div className="categoria-clientes">
+              <h3 className="categoria-title">
+                <FaChevronRight className="title-icon" />
+                <span>
+                  ACOMPAÑAMIENTO<br />
+                  CONTINUO
+                </span>
+              </h3>
+              
+              <div className="logos-wrapper">
+                <div className="logos-grid logos-grid-continuo">
+                  {clientesContinuo.map((cliente) => (
+                    <div key={cliente.id} className={`logo-item ${cliente.clase}`}>
+                      <img 
+                        src={cliente.imagen} 
+                        alt={cliente.nombre}
+                        className="cliente-logo"
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* ACOMPAÑAMIENTO PERIÓDICO - Derecha */}
-          <div className="categoria-clientes">
-            <h3 className="categoria-title">
-              <FaChevronRight className="title-icon" />
-              <span>
-                ACOMPAÑAMIENTO<br />
-                PERIÓDICO
-              </span>
-            </h3>
-            
-            <div className="logos-wrapper">
-              <div className="logos-grid logos-grid-periodico">
-                {clientesPeriodico.map((cliente) => (
-                  <div key={cliente.id} className={`logo-item ${cliente.clase}`}>
-                    <img 
-                      src={cliente.imagen} 
-                      alt={cliente.nombre}
-                      className="cliente-logo"
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
+            {/* ACOMPAÑAMIENTO PERIÓDICO - Derecha */}
+            <div className="categoria-clientes">
+              <h3 className="categoria-title">
+                <FaChevronRight className="title-icon" />
+                <span>
+                  ACOMPAÑAMIENTO<br />
+                  PERIÓDICO
+                </span>
+              </h3>
+              
+              <div className="logos-wrapper">
+                <div className="logos-grid logos-grid-periodico">
+                  {clientesPeriodico.map((cliente) => (
+                    <div key={cliente.id} className={`logo-item ${cliente.clase}`}>
+                      <img 
+                        src={cliente.imagen} 
+                        alt={cliente.nombre}
+                        className="cliente-logo"
+                        loading="lazy"
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <Footer />
+    </>
   );
 };
 

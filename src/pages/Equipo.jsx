@@ -28,7 +28,7 @@ function Equipo() {
       alt: "Francisca",
       descripcion: [
         "Arquitecta Senior.",
-        "Arquitecta Pontidicia Universidad Católica de Chile 2009.",
+        "Arquitecta Pontificia Universidad Católica de Chile 2009.",
         "Expertiz: Revisora - Gestión Municipal - Arquitecta Desarrollo - Modelado Digital."
       ]
     },

@@ -3,7 +3,6 @@ import Navigation from "./components/NavBar";
 import Home from "./pages/Home";
 import Clientes from "./pages/Clientes"; 
 import Equipo from "./pages/Equipo";
-import Footer from "./components/Footer";
 import Whatsapp from './components/Whatsapp';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path="/clientes" element={<Clientes />} />
         <Route path="/equipo" element={<Equipo />} />
       </Routes>
-      <Footer />
       {isHomePage && <Whatsapp />}
     </>
   );

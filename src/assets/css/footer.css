@@ -110,9 +110,12 @@
   }
 
   .footer-card {
-    padding: 10px !important;
-    border-radius: 18px !important;
-  }
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    transform: translateZ(0);
+}
 
   .footer-card .row {
     display: flex !important;
