@@ -3,12 +3,12 @@ import Navigation from "./components/NavBar";
 import Home from "./pages/Home";
 import Clientes from "./pages/Clientes"; 
 import Equipo from "./pages/Equipo";
+import Hacemos from "./pages/Hacemos"
 import Whatsapp from './components/Whatsapp';
 
 function App() {
   const location = useLocation();
   
-  // Solo muestra en la página de inicio
   const isHomePage = location.pathname === '/';
   
   return (
@@ -16,6 +16,7 @@ function App() {
       <Navigation />
       <Routes>  
         <Route path="/" element={<Home />} />
+        <Route path="/hacemos" element={<Hacemos />} />
         <Route path="/clientes" element={<Clientes />} />
         <Route path="/equipo" element={<Equipo />} />
       </Routes>

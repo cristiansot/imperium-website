@@ -1,21 +1,13 @@
 import { FaChevronRight } from "react-icons/fa";
 import '../assets/css/equipo.css';
 
-// Imports de imágenes
-import bgImage from '../assets/img/backgrounds/equipo.webp';
-import shapeImage from '../assets/img/backgrounds/shape.svg';
-import franciscoimg from '../assets/img/equipo/francisco.webp';
-import franciscaimg from '../assets/img/equipo/francisca.webp';
-import katherineimg from '../assets/img/equipo/katherine.webp';
-import cristinaimg from '../assets/img/equipo/cristina.webp';
-
 const Equipo = () => {
   const equipoData = [
     {
       id: 1,
       nombre: "FRANCISCO JAVIER JARAMILLO DEL VALLE",
       cargo: "SOCIO / LÍDER / DIRECTOR GENERAL",
-      imagen: franciscoimg,
+      imagen: "/img/equipo/francisco.webp",
       alt: "Francisco Javier Jaramillo",
       descripcion: [
         "Revisor Independiente de Arquitectura MINVU Primera Categoría.",
@@ -26,7 +18,7 @@ const Equipo = () => {
       id: 2,
       nombre: "FRANCISCA SOLIS ZARHI",
       cargo: "ALIANZA",
-      imagen: franciscaimg,
+      imagen: "/img/equipo/francisca.webp",
       alt: "Francisca Solis Zarhi",
       descripcion: [
         "Arquitecta Senior.",
@@ -38,7 +30,7 @@ const Equipo = () => {
       id: 3,
       nombre: "KATHERINE MUÑOZ ROJAS",
       cargo: "ALIANZA",
-      imagen: katherineimg,
+      imagen: "/img/equipo/katherine.webp",
       alt: "Katherine Muñoz Rojas",
       descripcion: [
         "Arquitecta.",
@@ -50,7 +42,7 @@ const Equipo = () => {
       id: 4,
       nombre: "CRISTINA ARÉVALO GUITIÉRREZ",
       cargo: "ALIANZA",
-      imagen: cristinaimg,
+      imagen: "/img/equipo/cristina.webp",
       alt: "Cristina Arévalo Guitiérrez",
       descripcion: [
         "Arquitecta.",
@@ -70,15 +62,14 @@ const Equipo = () => {
     <section 
       className="equipo-section"
       style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: "url('/img/backgrounds/equipo.webp')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
       }}
     >
-      {/* Shape decorativo */}
       <div className="equipo-shape">
-        <img src={shapeImage} alt="Decoración de fondo" />
+        <img src="/img/backgrounds/shape.svg" alt="Decoración de fondo" />
       </div>
 
       <div className="container">

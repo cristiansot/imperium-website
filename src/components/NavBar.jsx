@@ -25,12 +25,19 @@ function Navigation() {
 
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto align-items-lg-center">
+
             <Nav.Link as={Link} to="/" active={location.pathname === "/"}>
               Inicio
             </Nav.Link>
+
+             <Nav.Link as={Link} to="/hacemos" active={location.pathname === "/hacemos"}>
+              Qué Hacemos
+            </Nav.Link>
+
             <Nav.Link as={Link} to="/equipo" active={location.pathname === "/equipo"}>
               Equipo
             </Nav.Link>
+
             <Nav.Link as={Link} to="/clientes" active={location.pathname === "/clientes"}>
               Clientes
             </Nav.Link>

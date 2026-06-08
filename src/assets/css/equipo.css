@@ -58,7 +58,6 @@
   margin-bottom: 1rem;
   color: #ffffff;
   position: relative;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 3;
 }
 
@@ -77,7 +76,7 @@
 /* Subtítulo */
 .equipo-subtitle {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #e0e0e0;
   margin: 2.4rem auto 2rem auto;
