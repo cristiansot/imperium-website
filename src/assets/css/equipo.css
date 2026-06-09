@@ -254,14 +254,7 @@
   font-size: 1.6rem !important; /* Cambiado: antes era 3rem */
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 20px; /* Añadido: espacio debajo del título */
-}
-
-.equipo-experiencia {
-  margin-top: 0; /* Cambiado: antes era 40px */
-  padding: 20px 0; /* Ajustado */
-  border-top: 3px dotted rgba(255,255,255,0.8);
-  border-bottom: 3px dotted rgba(255,255,255,0.8);
+  margin-bottom: 30px; /* Añadido: espacio debajo del título */
 }
 
 .equipo-experiencia-grid {
@@ -285,7 +278,7 @@
   height: 16px;
   background: #ec6608;
   border-radius: 50%;
-  margin: 0 auto 10px auto; /* Reducido margen inferior */
+  margin: 0 auto 10px auto; 
 }
 
 .equipo-experiencia-textos { 

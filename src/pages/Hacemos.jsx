@@ -5,12 +5,12 @@ const Hacemos = () => {
     {
       id: 1,
       titulo: "EXPEDIENTES DE CALIDAD",
-      texto: "Nos destacamos por enfocarnos en la presentación de expedientes 'De Calidad Inmejorable' para evitar actas de observaciones y lograr agilidad en las aprobaciones."
+      texto: 'Nos destacamos por enfocarnos en la presentación de expedientes "de calidad Inmejorable" para evitar actas de observaciones y lograr agilidad en las aprobaciones.'
     },
     {
       id: 2,
       titulo: "GESTIÓN PÚBLICA",
-      texto: "Gestión con la institución pública, discutir los temas de fondo pero agilizar los temas de forma. Buena relación con los funcionarios para lograr objetivo común de aprobación."
+      texto: "Gestión con la institución pública, discutir los temas de fondo y agilizar los temas de forma. Buena relación de respeto y transparencia con los funcionarios para lograr objetivo común de aprobación."
     },
     {
       id: 3,
@@ -51,7 +51,7 @@ const Hacemos = () => {
                 <span className="hacemos-numero-grande">{item.id}</span>
               </div>
               <div className="hacemos-info">
-                <h3 className="hacemos-card-titulo">{item.titulo}</h3>
+                <h2 className="hacemos-card-titulo">{item.titulo}</h2>
                 <div className="hacemos-dot" aria-hidden="true"></div>
                 <p className="hacemos-texto">{item.texto}</p>
               </div>

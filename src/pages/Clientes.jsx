@@ -3,11 +3,11 @@ import { FaChevronRight } from "react-icons/fa";
 
 const Clientes = () => {
   const clientesContinuo = [
-    { id: 1, nombre: 'Daniel Achondo', imagen: '/img/logos/achondo.svg', clase: 'logo-achondo' },
-    { id: 2, nombre: 'INVINSA', imagen: '/img/logos/invinsa.svg', clase: 'logo-invinsa' },
+    { id: 1, nombre: 'Parque Arauco', imagen: '/img/logos/arauco.svg', clase: 'logo-arauco'},
+    { id: 2, nombre: 'Walmart', imagen: '/img/logos/walmart.svg', clase: 'logo-walmart' },
     { id: 3, nombre: 'Metalpar', imagen: '/img/logos/metalpar.svg', clase: 'logo-metalpar' },
-    { id: 4, nombre: 'Walmart', imagen: '/img/logos/walmart.svg', clase: 'logo-walmart' },
-    { id: 5, nombre: 'Parque Arauco', imagen: '/img/logos/arauco.svg', clase: 'logo-arauco' },
+    { id: 4, nombre: 'INVINSA', imagen: '/img/logos/invinsa.svg', clase: 'logo-invinsa' },
+    { id: 5, nombre: 'Daniel Achondo', imagen: '/img/logos/achondo.svg', clase: 'logo-achondo'},
     { id: 6, nombre: 'UDLA', imagen: '/img/logos/udla.svg', clase: 'logo-udla' },
     { id: 7, nombre: 'Pedro de Valdivia', imagen: '/img/logos/valdivia.svg', clase: 'logo-valdivia' }
   ];
@@ -37,13 +37,13 @@ const Clientes = () => {
         <div className="clientes-content">
           {/* ACOMPAÑAMIENTO CONTINUO - Izquierda */}
           <div className="categoria-clientes">
-            <h3 className="categoria-title">
+            <h2 className="categoria-title">
               <FaChevronRight className="title-icon" />
               <span>
                 ACOMPAÑAMIENTO<br />
                 CONTINUO
               </span>
-            </h3>
+            </h2>
             
             <div className="logos-wrapper">
               <div className="logos-grid logos-grid-continuo">
@@ -63,13 +63,13 @@ const Clientes = () => {
 
           {/* ACOMPAÑAMIENTO PERIÓDICO - Derecha */}
           <div className="categoria-clientes">
-            <h3 className="categoria-title">
+            <h2 className="categoria-title">
               <FaChevronRight className="title-icon" />
               <span>
                 ACOMPAÑAMIENTO<br />
                 PERIÓDICO
               </span>
-            </h3>
+            </h2>
             
             <div className="logos-wrapper">
               <div className="logos-grid logos-grid-periodico">

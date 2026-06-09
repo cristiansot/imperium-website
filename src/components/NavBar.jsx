@@ -49,6 +49,15 @@ function Navigation() {
               Inicio
             </Nav.Link>
 
+             <Nav.Link 
+              as={Link} 
+              to="/empresa" 
+              active={location.pathname === "/empresa"}
+              onClick={handleLinkClick}
+            >
+              Empresa
+            </Nav.Link>
+
             <Nav.Link 
               as={Link} 
               to="/hacemos" 

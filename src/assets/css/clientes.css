@@ -165,17 +165,17 @@
 .logo-invinsa .cliente-logo { max-width: 180px; }
 .logo-metalpar .cliente-logo { max-width: 210px; }
 .logo-walmart .cliente-logo { max-width: 220px; }
-.logo-arauco .cliente-logo { max-width: 110px; }
+.logo-arauco .cliente-logo { max-width: 140px; }
 .logo-udla .cliente-logo { max-width: 140px; }
 .logo-valdivia .cliente-logo { max-width: 180px; }
 
 /* ACOMPAÑAMIENTO PERIÓDICO - Anchos individuales */
-.logo-oval .cliente-logo { max-width: 130px; margin-top: 16px;}
-.logo-udp .cliente-logo { max-width: 200px; margin-top: 16px;}
-.logo-geinco .cliente-logo { max-width: 80px; margin-top: 24px;}
-.logo-salud .cliente-logo { max-width: 100px; margin-top: 24px;}
-.logo-cinepolis .cliente-logo { max-width: 200px; margin-top: 14px;}
-.logo-portland .cliente-logo { max-width: 200px; margin-top: 14px;}
+.logo-oval .cliente-logo { max-width: 130px; margin-top: 28px;}
+.logo-udp .cliente-logo { max-width: 200px; margin-top: 28px;}
+.logo-geinco .cliente-logo { max-width: 80px; margin-top: 28px;}
+.logo-salud .cliente-logo { max-width: 100px; margin-top: 28px;}
+.logo-cinepolis .cliente-logo { max-width: 200px; margin-top: 24px;}
+.logo-portland .cliente-logo { max-width: 200px; margin-top: 24px;}
 
 /* Ajustes para tablet */
 @media (min-width: 768px) and (max-width: 1024px) {

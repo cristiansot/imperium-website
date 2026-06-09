@@ -6,6 +6,7 @@ import Equipo from "./pages/Equipo";
 import Hacemos from "./pages/Hacemos"
 import Whatsapp from './components/Whatsapp';
 import Servicios from "./pages/Servicios";
+import Empresa from "./pages/Empresa"
 
 function App() {
   const location = useLocation();
@@ -17,6 +18,7 @@ function App() {
       <Navigation />
       <Routes>  
         <Route path="/" element={<Home />} />
+        <Route path="/empresa" element={<Empresa />} />
         <Route path="/hacemos" element={<Hacemos />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/clientes" element={<Clientes />} />

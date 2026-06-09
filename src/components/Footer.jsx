@@ -24,7 +24,7 @@ function Footer() {
           </div>
 
           <div className="col-sm-4 col-md-4 col-lg-4 footer-col">
-            <div className="footer-item">
+            <div className="footer-item col-central">
               <h3>
                 <FaChevronRight className="footer-icon" />
                 CÓDIGO POSTAL

@@ -99,14 +99,6 @@
   transform: translateX(3px);
 }
 
-.servicios-numero {
-  font-size: 2rem;
-  font-weight: 800;
-  color: rgba(236, 102, 8, 0.3);
-  line-height: 1;
-  flex-shrink: 0;
-}
-
 .servicios-card-titulo {
   font-size: 1.4rem !important;
   font-weight: 700;
@@ -122,7 +114,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  padding-left: 2rem;
+  padding-left: 2.4rem;
 }
 
 .servicios-lista li {
@@ -133,7 +125,7 @@
   font-size: 1.2rem;
   font-weight: 100;
   color: #e0e0e0;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 /* Viñeta redonda blanca */
@@ -148,6 +140,18 @@
 
 .servicios-lista li span:last-child {
   flex: 1;
+}
+
+/* La tercera tarjeta ocupa todo el ancho */
+.servicios-card-full {
+  grid-column: 1 / -1;
+}
+
+/* Dos columnas internas */
+.servicios-lista-doble {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 
 /* ============================================
@@ -180,10 +184,6 @@
   }
   
   .servicios-header-icon {
-    font-size: 1.8rem;
-  }
-  
-  .servicios-numero {
     font-size: 1.8rem;
   }
   
@@ -266,5 +266,14 @@
   
   .servicios-shape {
     opacity: 0.08;
+  }
+
+   .servicios-card-full {
+    grid-column: auto;
+  }
+
+  .servicios-lista-doble {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 }
