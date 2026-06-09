@@ -23,12 +23,18 @@ const Empresa = () => {
     ]
   };
 
+  const circulos = [
+    { id: 1, src: "/img/circle-1.svg", alt: "Círculo 1" },
+    { id: 2, src: "/img/circle-2.svg", alt: "Círculo 2" },
+    { id: 3, src: "/img/circle-3.svg", alt: "Círculo 3" }
+  ];
+
   return (
     <section className="empresa-section">
-      {/* Background layer - index 0 */}
+      {/* Background layer */}
       <div className="empresa-bg-layer"></div>
       
-      {/* Francisco image layer - index 1 */}
+      {/* Francisco image layer */}
       <div className="empresa-francisco-layer">
         <img 
           src="/img/equipo/francisco-trama.png" 
@@ -36,7 +42,7 @@ const Empresa = () => {
         />
       </div>
     
-      {/* Content layer - index 3 */}
+      {/* Content layer */}
       <div className="empresa-content-layer">
         <div className="container">
           {/* Header centrado */}
@@ -45,19 +51,28 @@ const Empresa = () => {
             <div className="empresa-title-line"></div>
           </div>
 
-          {/* Contenedor centrado para los recuadros */}
+          {/* Contenedor principal con los recuadros */}
           <div className="empresa-main-content">
-            {/* Columna izquierda con imagen visible (sin overlay adicional) */}
-            <div className="empresa-col-left-visible"></div>
-            
-            {/* Columna derecha con recuadros centrados */}
             <div className="empresa-col-right-centered">
+              {/* Círculos en columna sobre las cajas */}
+              <div className="circulos-columna">
+                {circulos.map((circulo) => (
+                  <div key={circulo.id} className="circulo-item">
+                    <img 
+                      src={circulo.src} 
+                      alt={circulo.alt}
+                      className="circulo-svg"
+                    />
+                  </div>
+                ))}
+              </div>
+
               <div className="recuadros-container">
-                {/* Primer recuadro */}
+                {/* Primer recuadro - Especializada en: */}
                 <div className="recuadro recuadro-especialidades">
                   <div className="recuadro-header">
                     <FaChevronRight className="recuadro-header-icon" />
-                    <h2 className="recuadro-title">Especializada en:</h2>
+                    <h2 className="recuadro-title">ESPECIALIZADA EN:</h2>
                   </div>
                   <ul className="recuadro-lista">
                     {serviciosLista.map((item, index) => (
@@ -69,7 +84,7 @@ const Empresa = () => {
                   </ul>
                 </div>
                 
-                {/* Segundo recuadro */}
+                {/* Segundo recuadro - Fundador */}
                 <div className="recuadro recuadro-fundador">
                   <div className="fundador-header">
                     <div className="fundador-nombre-wrapper">
