@@ -4,11 +4,11 @@ import '../assets/css/empresa.css';
 
 const Empresa = () => {
   const serviciosLista = [
-    "Permisología",
-    "Estudios",
-    "Asesorías Normativas",
-    "Expert Advisor (Consejeros expertos)",
-    "Diagnósticos estratégicos",
+    "Permisología.",
+    "Estudios.",
+    "Asesorías Normativas.",
+    "Expert Advisor. (Consejeros expertos)",
+    "Diagnósticos estratégicos.",
     "Tramitación ante variados Organismos del Estado."
   ];
 

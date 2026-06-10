@@ -5,7 +5,7 @@ const Hacemos = () => {
     {
       id: 1,
       titulo: "EXPEDIENTES DE CALIDAD",
-      texto: 'Nos destacamos por enfocarnos en la presentación de expedientes "de calidad Inmejorable" para evitar actas de observaciones y lograr agilidad en las aprobaciones.'
+      texto: 'Nos destacamos por enfocarnos en la presentación de expedientes "de calidad inmejorable" para evitar actas de observaciones y lograr agilidad en las aprobaciones.'
     },
     {
       id: 2,

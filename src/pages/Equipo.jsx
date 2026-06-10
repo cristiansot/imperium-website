@@ -23,7 +23,7 @@ const Equipo = () => {
       descripcion: [
         "Arquitecta Senior.",
         "Arquitecta Pontificia Universidad Católica de Chile 2009.",
-        "Expertiz: Revisora - Gestión Municipal - Arquitecta Desarrollo - Modelado Digital."
+        "Experticia: Revisora - Gestión Municipal - Arquitecta Desarrollo - Modelado Digital."
       ]
     },
     {
@@ -35,7 +35,7 @@ const Equipo = () => {
       descripcion: [
         "Arquitecta.",
         "Arquitecta Universidad Andrés Bello 2016.",
-        "Expertiz: Revisora - Gestión Municipal - Arquitecta Coordinadora - Oficina Técnica."
+        "Experticia: Revisora - Gestión Municipal - Arquitecta Coordinadora - Oficina Técnica."
       ]
     },
     {
@@ -47,7 +47,7 @@ const Equipo = () => {
       descripcion: [
         "Arquitecta.",
         "Arquitecta Universidad San Sebastián 2020.",
-        "Expertiz: Gestión Municipal - Arquitecta Desarrollo - Modelado Digital"
+        "Experticia: Gestión Municipal - Arquitecta Desarrollo - Modelado Digital."
       ]
     }
   ];
@@ -76,7 +76,7 @@ const Equipo = () => {
         <h1 className="equipo-title">NUESTRO EQUIPO</h1>
         
         <h2 className="equipo-subtitle">
-          "Trabajamos acorde a los nuevos tiempos laborales. Generamos alianzas para lograr objetivos, con profesionales según expertiz"
+          "Trabajamos acorde a los nuevos tiempos laborales. Generamos alianzas para lograr objetivos, con profesionales según Experticia"
         </h2>
         
         <div className="equipo-content">

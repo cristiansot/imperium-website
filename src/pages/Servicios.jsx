@@ -10,18 +10,18 @@ const Servicios = () => {
         "Revisión Digital de expedientes con anotaciones en planos.",
         "Revisión entre 5 a 7 días hábiles.",
         "Informe Favorable con Firma Electrónica Avanzada.",
-        "Otros",
+        "otros.",
       ],
     },
     {
       id: 2,
-      titulo: "PERMISOLOGIA Y REGULARIZACIONES",
+      titulo: "PERMISOLOGÍA Y REGULARIZACIONES",
       items: [
         "Cabidas.",
         "Anteproyectos DOM.",
         "Revisión y armado de expedientes de regularización adaptándolos a norma.",
         "Patrocinios.",
-        "Otros",
+        "otros.",
       ],
     },
     {
@@ -36,9 +36,8 @@ const Servicios = () => {
         "Factibilidad de proyectos.",
         "Tramitación municipal.",
         "Procesos de aprobación.",
-        "Interpretación regulatoria.",
         "Evaluación preliminar de cabidas y usos de suelo.",
-        "Otros",
+        "otros.",
       ],
     },
   ];

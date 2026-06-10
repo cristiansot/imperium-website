@@ -326,81 +326,7 @@
   }
 }
 
-@media (max-width: 767px) {
-  .empresa-section {
-    padding: 100px 0 60px 0;
-  }
-  
-  .empresa-header {
-    margin-bottom: 2rem;
-  }
-  
-  .empresa-title {
-    font-size: 2rem;
-  }
-  
-  .empresa-main-content {
-    min-height: auto;
-  }
-  
-  .empresa-col-right-centered {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .recuadros-container {
-    max-width: 100%;
-    width: 100%;
-    order: 1;
-  }
-  
-  .circulos-columna {
-    flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-    order: 2;
-  }
-  
-  .recuadro {
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .recuadro-title {
-    font-size: 1.2rem;
-  }
-  
-  .fundador-nombre {
-    font-size: 1.1rem;
-  }
-  
-  .fundador-cargo,
-  .fundador-especialidad {
-    padding-left: 3.6rem;
-    margin-top: 10px !important;
-  }
-  
-  .empresa-francisco-layer {
-    width: 100%;
-  }
-  
-  .empresa-francisco-layer img {
-    opacity: 0.2;
-  }
-  
-  .circulo-item {
-    margin: 60px -20px 0 0px;
-    z-index: 3
-}
-
-  .circulo-svg {
-    width: 8rem !important;
-    height: 8rem;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-    margin-bottom: 20px;
-  }
-}
+/* TABLET */
 
 @media (min-width: 1400px) {
   .recuadro-title {
@@ -435,6 +361,86 @@
   }
   
   .circulos-columna {
-    gap: 2rem;
+    gap: 1rem;
+  }
+}
+
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .empresa-section {
+    padding: 100px 0 60px 0;
+  }
+  
+  .empresa-header {
+    margin-bottom: 2rem;
+  }
+  
+  .empresa-title {
+    font-size: 2rem;
+  }
+  
+  .empresa-main-content {
+    min-height: auto;
+  }
+  
+  .empresa-col-right-centered {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .recuadros-container {
+    max-width: 100%;
+    width: 100%;
+    order: 1;
+  }
+  
+  .circulos-columna {
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 10px 0 0;
+    gap: 1rem;
+    order: 2;
+  }
+  
+  .recuadro {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .recuadro-title {
+    font-size: 1.2rem;
+  }
+  
+  .fundador-nombre {
+    font-size: 1.1rem;
+  }
+  
+  .fundador-cargo,
+  .fundador-especialidad {
+    padding-left: 3.6rem;
+    margin-top: 10px !important;
+  }
+  
+  .empresa-francisco-layer {
+    width: 100%;
+  }
+  
+  .empresa-francisco-layer img {
+    opacity: 0.2;
+  }
+  
+  .circulo-item {
+    margin: 60px -10px 20px 0px;
+    width: 30px;
+    height: 30px;
+}
+
+  .circulo-svg {
+    width: 8rem !important;
+    height: 8rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    margin-bottom: 20px;
   }
 }
